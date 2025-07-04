@@ -4,18 +4,70 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>jayeong's portfolio</title>
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="index_style.css" />
 	</head>
 	<body>
 		<header>
-			<h1>홍길동</h1>
-			<p>웹 개발자 | 프론트엔드 & 백엔드</p>
-			<nav>
-				<a href="#about">소개</a>
-				<a href="#projects">프로젝트</a>
-				<a href="#skills">기술 스택</a>
-				<a href="#contact">연락처</a>
+			<nav class="navbar navbar-expand-lg bg-body-tertiary">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#" navbar-brand-color>miniT</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="project.html">Link</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									Dropdown
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">Action</a></li>
+									<li><a class="dropdown-item" href="#">Another action</a></li>
+									<li><hr class="dropdown-divider" /></li>
+									<li>
+										<a class="dropdown-item" href="#">Something else here</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link disabled" aria-disabled="true">Disabled</a>
+							</li>
+						</ul>
+						<form class="d-flex" role="search">
+							<input
+								class="form-control me-2"
+								type="search"
+								placeholder="Search"
+								aria-label="Search"
+							/>
+							<button class="btn btn-outline-success" type="submit">
+								Search
+							</button>
+						</form>
+					</div>
+				</div>
 			</nav>
+
 			<link
 				href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
 				rel="stylesheet"
@@ -24,55 +76,92 @@
 			/>
 		</header>
 
-		<section id="about">
-			<h2>소개</h2>
-			<p>
-				안녕하세요! 사용자 경험을 중요하게 생각하는 개발자 홍길동입니다.<br />
-				최신 웹 기술에 관심이 많으며, 다양한 프로젝트 경험이 있습니다.
-			</p>
-		</section>
-
-		<section id="projects">
-			<h2>프로젝트</h2>
-			<ul>
-				<li>
-					<strong>미니블로그</strong> - React, Node.js 기반의 간단한 블로그
-					플랫폼
-				</li>
-				<li>
-					<strong>포트폴리오 사이트</strong> - HTML, CSS, JS만으로 구현한 개인
-					홈페이지
-				</li>
-			</ul>
-		</section>
-
-		<section id="skills">
-			<h2>기술 스택</h2>
-			<ul class="skills">
-				<li>HTML5</li>
-				<li>CSS3</li>
-				<li>JavaScript</li>
-				<li>React</li>
-				<li>Node.js</li>
-				<li>Git & GitHub</li>
-			</ul>
-		</section>
-
-		<section id="contact">
-			<h2>연락처</h2>
-			<p>
-				Email:
-				<a href="mailto:your.email@example.com">your.email@example.com</a>
-			</p>
-			<p>
-				GitHub:
-				<a href="https://github.com/yourgithub" target="_blank">yourgithub</a>
-			</p>
-		</section>
-
-		<footer>
-			<p>&copy; 2025 홍길동. 모든 권리 보유.</p>
-		</footer>
+		<main class="resume-container">
+			<!-- 왼쪽: 사진 + 연락처 + 학력 -->
+			<aside class="resume-left">
+				<div class="photo">
+					<img src="my-photo.jpg" alt="Profile Photo" />
+				</div>
+				<section class="contact">
+					<h2>Contact_</h2>
+					<p><strong>Phone</strong><br />010 0000 0000</p>
+					<p><strong>Email</strong><br />jayoung9978@gmail.com</p>
+					<p><strong>Website</strong><br />minitest.com</p>
+					<p>
+						<strong>Address</strong><br />
+						Cheongju-si&nbsp;&nbsp;(City, Zip)
+					</p>
+				</section>
+				<section class="education">
+					<h2>Education_</h2>
+					<p><strong>2025.06 -</strong><br />풀스택개발자 시작<br /></p>
+				</section>
+			</aside>
+			<!-- 가운데/오른쪽: 프로필, 경력, 스킬, 취미 -->
+			<section class="resume-main">
+				<header>
+					<h1>쿠쿠_<br /><span class="name-bold">jayounG</span></h1>
+					<div class="job-title">&amp; _Full stack</div>
+				</header>
+				<section class="profile">
+					<h2>Profile_</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+						ad minim veniam
+					</p>
+				</section>
+				<section class="experience">
+					<h2>Experience_</h2>
+					<div class="exp-row">
+						<div>
+							<strong>Junior UX Designer – Present</strong><br />
+							Company Name / Location
+							<p>Lorem ipsum simply dummy typesetting industry.</p>
+						</div>
+						<div>
+							<strong>Senior UX Designer – 2018</strong><br />
+							Company Name / Location
+							<p>Lorem ipsum simply dummy text of the printing.</p>
+						</div>
+					</div>
+				</section>
+				<section class="skills">
+					<h2>Skills_</h2>
+					<div class="skills-row">
+						<ul>
+							<li>html</li>
+							<li>css</li>
+						</ul>
+					</div>
+				</section>
+				<section class="reference">
+					<h2>Reference_</h2>
+					<div class="ref-row">
+						<div>
+							Senior Designer<br />
+							Jhon Ander Smith<br />
+							Company name here
+						</div>
+						<div>
+							Senior Designer<br />
+							Jhon Ander Smith<br />
+							Company name here
+						</div>
+					</div>
+				</section>
+				<section class="hobbies">
+					<h2>Hobbies_</h2>
+					<div class="hobby-icons">
+						<span>home: </span>
+						<span>coding</span>
+						<span>sleep</span>
+						<span>animated movie</span>
+						<span>league of legend:</span>
+					</div>
+				</section>
+			</section>
+		</main>
 
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
