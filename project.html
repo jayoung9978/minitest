@@ -4,9 +4,18 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>project</title>
-		<link rel="stylesheet" href="project_style.css" />
+		<link rel="stylesheet" href="css/project_style.css" />
 	</head>
 	<body>
+		<!-- 네비게이션 바가 들어갈 위치에 추가 -->
+		<div id="navbar-placeholder"></div>
+		<script>
+			fetch("navbar.html")
+				.then((res) => res.text())
+				.then((data) => {
+					document.getElementById("navbar-placeholder").innerHTML = data;
+				});
+		</script>
 		<header>
 			<link
 				href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
@@ -21,7 +30,7 @@
 			<div class="row row-cols-1 row-cols-md-2 g-4">
 				<div class="col">
 					<div class="card">
-						<img src="my-photo.jpg" class="card-img-top" alt="..." />
+						<img src="image/my-photo.jpg" class="card-img-top" alt="..." />
 						<div class="card-body">
 							<h5 class="card-title">Card title</h5>
 							<p class="card-text">
@@ -34,7 +43,7 @@
 				</div>
 				<div class="col">
 					<div class="card">
-						<img src="my-photo.jpg" class="card-img-top" alt="..." />
+						<img src="image/my-photo.jpg" class="card-img-top" alt="..." />
 						<div class="card-body">
 							<h5 class="card-title">Card title</h5>
 							<p class="card-text">
@@ -47,7 +56,7 @@
 				</div>
 				<div class="col">
 					<div class="card">
-						<img src="my-photo.jpg" class="card-img-top" alt="..." />
+						<img src="image/my-photo.jpg" class="card-img-top" alt="..." />
 						<div class="card-body">
 							<h5 class="card-title">Card title</h5>
 							<p class="card-text">
@@ -59,7 +68,7 @@
 				</div>
 				<div class="col">
 					<div class="card">
-						<img src="my-photo.jpg" class="card-img-top" alt="..." />
+						<img src="image/my-photo.jpg" class="card-img-top" alt="..." />
 						<div class="card-body">
 							<h5 class="card-title">Card title</h5>
 							<p class="card-text">
@@ -72,7 +81,7 @@
 				</div>
 				<div class="col">
 					<div class="card">
-						<img src="my-photo.jpg" class="card-img-top" alt="..." />
+						<img src="image/my-photo.jpg" class="card-img-top" alt="..." />
 						<div class="card-body">
 							<h5 class="card-title">Card title</h5>
 							<p class="card-text">
@@ -85,7 +94,7 @@
 				</div>
 				<div class="col">
 					<div class="card">
-						<img src="my-photo.jpg" class="card-img-top" alt="..." />
+						<img src="image/my-photo.jpg" class="card-img-top" alt="..." />
 						<div class="card-body">
 							<h5 class="card-title">Card title</h5>
 							<p class="card-text">
