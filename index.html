@@ -4,36 +4,17 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>NORAN | 개발자 포트폴리오</title>
-		<!-- Tailwind CSS CDN 링크 -->
 		<script src="https://cdn.tailwindcss.com"></script>
-		<!-- Google Fonts - Inter (가독성 좋은 폰트) -->
 		<link
 			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
 			rel="stylesheet"
 		/>
-		<style>
-			/* 기본 폰트 설정 */
-			body {
-				font-family: "Inter", sans-serif;
-				background-color: #f8fafc; /* Tailwind: bg-slate-50 */
-				color: #334155; /* Tailwind: text-slate-700 */
-			}
-			/* 스크롤바 숨기기 (선택 사항) */
-			body::-webkit-scrollbar {
-				display: none;
-			}
-			body {
-				-ms-overflow-style: none; /* IE and Edge */
-				scrollbar-width: none; /* Firefox */
-			}
-		</style>
+		<link rel="stylesheet" href="index_style.css" />
 	</head>
 	<body class="min-h-screen flex flex-col items-center justify-center p-4">
-		<!-- 메인 컨테이너: 최대 너비 설정 및 중앙 정렬 -->
 		<div
 			class="max-w-4xl w-full bg-white shadow-lg rounded-xl p-8 md:p-12 my-8"
 		>
-			<!-- 헤더 섹션: 간단한 소개와 인상적인 문구 -->
 			<header class="text-center mb-12">
 				<h1
 					class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight"
@@ -46,7 +27,6 @@
 				</p>
 			</header>
 
-			<!-- 소개 섹션 -->
 			<section id="about" class="mb-12">
 				<h2
 					class="text-3xl font-bold text-slate-800 mb-6 border-b-2 border-indigo-300 pb-2"
@@ -67,7 +47,6 @@
 				</div>
 			</section>
 
-			<!-- 학습 및 프로젝트 섹션 (아직 프로젝트가 없다면 학습 과정을 보여줍니다) -->
 			<section id="learning-projects" class="mb-12">
 				<h2
 					class="text-3xl font-bold text-slate-800 mb-6 border-b-2 border-indigo-300 pb-2"
@@ -75,7 +54,6 @@
 					🚀 학습 여정 & 미니 프로젝트
 				</h2>
 				<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-					<!-- 학습 카드 1 -->
 					<div
 						class="bg-indigo-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
 					>
@@ -109,7 +87,6 @@
 						</a>
 					</div>
 
-					<!-- 학습 카드 2 -->
 					<div
 						class="bg-indigo-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
 					>
@@ -143,7 +120,6 @@
 						</a>
 					</div>
 
-					<!-- 학습 카드 3 (추가 예정) -->
 					<div
 						class="bg-indigo-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
 					>
@@ -178,7 +154,6 @@
 				</div>
 			</section>
 
-			<!-- 기술 스택 섹션 -->
 			<section id="skills" class="mb-12">
 				<h2
 					class="text-3xl font-bold text-slate-800 mb-6 border-b-2 border-indigo-300 pb-2"
@@ -217,7 +192,6 @@
 				</div>
 			</section>
 
-			<!-- 연락처 섹션 -->
 			<section id="contact" class="text-center">
 				<h2
 					class="text-3xl font-bold text-slate-800 mb-6 border-b-2 border-indigo-300 pb-2 inline-block"
@@ -236,7 +210,6 @@
 						rel="noopener noreferrer"
 						class="bg-[#5865F2] hover:bg-[#4752C4] text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300 shadow-md hover:shadow-lg flex items-center"
 					>
-						<!-- Discord SVG 아이콘 -->
 						<svg
 							class="w-5 h-5 mr-2"
 							fill="currentColor"
@@ -273,7 +246,6 @@
 				</div>
 			</section>
 
-			<!-- 푸터 -->
 			<footer
 				class="text-center text-slate-500 text-sm mt-12 pt-8 border-t border-slate-200"
 			>
